@@ -1,0 +1,10 @@
+﻿[
+	{
+		"pattern": "You are blessed with the gift of the Ruchu",
+		"commands": [
+			"Send, { 6 }",
+			"Send, { 6 }",
+			"Send, { 6 }"
+		]
+	}
+] 
