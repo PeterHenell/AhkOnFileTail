@@ -20,7 +20,7 @@ namespace StdinToOut
             var file = args[1];
             var config = args[2];
 
-            var manager = ActionManager.FromFile(config);
+            var manager = TriggerManager.FromFile(config, new AHKManager());
 
             var reader = new TailReader(dir, file);
 
