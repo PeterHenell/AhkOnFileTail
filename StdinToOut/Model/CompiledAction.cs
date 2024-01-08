@@ -10,7 +10,7 @@ namespace StdinToOut.Model
     internal class CompiledAction
     {
         public Regex Pattern { get; set; }
-        //public IList<Group> Groups { get; set; }
+        
         public string Command { get; set; }
 
         public static CompiledAction TryCompile(RawAction raw)
