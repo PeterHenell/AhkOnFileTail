@@ -12,10 +12,7 @@ namespace StdinToOut
             {
                 throw new ArgumentException($"not enough args supplied, requires [dir, file configfilePath]: found {args.Length} parameters, requires 3");
             }
-
-            //var dir = @"C:\Games\Logs";
-            //var file = "logfile.txt";
-            //var config = @"example.json";
+            
             var dir = args[0];
             var file = args[1];
             var config = args[2];
