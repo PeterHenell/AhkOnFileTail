@@ -1,5 +1,6 @@
 ﻿using AutoHotkey.Interop;
 using System;
+using System.IO;
 using System.Threading;
 
 namespace StdinToOut
@@ -15,9 +16,9 @@ namespace StdinToOut
             
             var dir = args[0];
             var file = args[1];
-            var config = args[2];
+            var triggerFile = args[2];
 
-            var manager = TriggerManager.FromFile(config, new AHKManager());
+            var manager = TriggerManager.FromFile(triggerFile, new AHKManager());
 
             var reader = new TailReader(dir, file);
 
